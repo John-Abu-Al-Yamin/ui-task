@@ -1,9 +1,9 @@
 import React from "react";
 import HeroSection from "../components/Home/HeroSection";
 import SponsersSection from "../components/Home/SponsersSection";
-import Testimonials from "../components/Home/testimonials";
 import ProjectSection from "../components/Home/ProjectSection";
 import AskSection from "../components/Home/AskSection";
+import Testimonials from "../components/Home/Testimonials";
 
 const HomePage = () => {
   return (
