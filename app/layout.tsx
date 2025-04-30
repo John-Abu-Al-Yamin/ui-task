@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import CursorAnimation from "./components/CursorAnimation";
+import NavSticky from "./components/Sticky/NavSticky";
+import BtnWathsApp from "./components/BtnWathsApp";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,9 +31,10 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased !overflow-x-hidden`}
       >
         <CursorAnimation />
+        <NavSticky />
+        <BtnWathsApp />
 
         {children}
-        
       </body>
     </html>
   );

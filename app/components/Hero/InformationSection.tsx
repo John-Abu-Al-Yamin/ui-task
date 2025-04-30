@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const InformationSection = () => {
   return (
     <motion.div
-      className="space-y-4"
+      className="space-y-4 px-2 md:px-4"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: false }}

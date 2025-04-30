@@ -5,7 +5,7 @@ import { Voicemail } from "lucide-react";
 
 export default function ParallaxSection() {
   return (
-    <div className="">
+    <div className="px-2 md:px-4">
       <section className="relative py-10">
         <ParallaxText baseVelocity={-5}>Framer Motion</ParallaxText>
         <ParallaxText baseVelocity={5}>Scroll Velocity</ParallaxText>
