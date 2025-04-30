@@ -28,7 +28,6 @@ const Cards = () => {
         viewport={{ once: false }}
         transition={{ duration: 0.8 }}
         variants={cardVariants}
-        drag={true}
       >
         <Image
           src="https://placehold.co/600x400/EEE/31343C.png"
