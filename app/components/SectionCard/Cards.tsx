@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import React from "react";
 
 const cardVariants = {
@@ -29,10 +30,12 @@ const Cards = () => {
         variants={cardVariants}
         drag={true}
       >
-        <img
-          src="https://placehold.co/600x400/EEE/31343C"
+        <Image
+          src="https://placehold.co/600x400/EEE/31343C.png"
           alt="card"
           className="w-full h-auto rounded-md"
+          width={600}
+          height={400}
         />
       </motion.div>
 
@@ -46,10 +49,12 @@ const Cards = () => {
         transition={{ duration: 0.8 }}
         variants={cardVariants}
       >
-        <img
-          src="https://placehold.co/600x400/EEE/31343C"
+        <Image
+          src="https://placehold.co/600x400/EEE/31343C.png"
           alt="card"
           className="w-full h-auto rounded-md"
+          width={600}
+          height={400}
         />
       </motion.div>
 
@@ -63,10 +68,12 @@ const Cards = () => {
         transition={{ duration: 0.8 }}
         variants={cardVariants}
       >
-        <img
-          src="https://placehold.co/600x400/EEE/31343C"
+        <Image
+          src="https://placehold.co/600x400/EEE/31343C.png"
           alt="card"
           className="w-full h-auto rounded-md"
+          width={600}
+          height={400}
         />
       </motion.div>
 
@@ -80,10 +87,12 @@ const Cards = () => {
         transition={{ duration: 0.8 }}
         variants={cardVariants}
       >
-        <img
-          src="https://placehold.co/600x400/EEE/31343C"
+        <Image
+          src="https://placehold.co/600x400/EEE/31343C.png"
           alt="card"
           className="w-full h-auto rounded-md"
+          width={600}
+          height={400}
         />
       </motion.div>
     </div>

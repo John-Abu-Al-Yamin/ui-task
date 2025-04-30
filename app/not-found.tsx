@@ -19,8 +19,8 @@ export default function NotFound() {
             Page not found
           </h1>
           <p className="mx-auto max-w-[500px] text-muted-foreground md:text-xl/relaxed">
-            Sorry, we couldn't find the page you're looking for. It might have
-            been moved or deleted.
+            Sorry&apos; we couldn't find the page you're looking for. It might
+            have been moved or deleted.
           </p>
         </div>
         <button className="relative text-white text-xl py-2 px-6 bg-black border-none rounded-xl shadow-lg hover:bg-gray-800 hover:shadow-xl transition-all duration-300">
