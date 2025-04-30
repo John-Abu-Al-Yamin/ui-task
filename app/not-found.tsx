@@ -19,7 +19,7 @@ export default function NotFound() {
             Page not found
           </h1>
           <p className="mx-auto max-w-[500px] text-muted-foreground md:text-xl/relaxed">
-            Sorry we couldn't find the page you're looking for. It might have
+            Sorry we couldnt find the page youre looking for. It might have
             been moved or deleted.
           </p>
         </div>
