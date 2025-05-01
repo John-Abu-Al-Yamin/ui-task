@@ -12,10 +12,10 @@ const BtnWathsApp = () => {
       transition={{ duration: 0.3, ease: "easeOut" }}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed hidden md:flex z-50 bottom-8 right-8 
+      className="fixed  md:flex  bottom-4 right-4 md:right-8 md:bottom-8 
                  bg-green-600 text-white px-5 py-3 rounded-full shadow-xl 
                  hover:bg-green-700 hover:shadow-2xl transition duration-300 
-                 items-center gap-2 animate-bounce"
+                 items-center gap-2 animate-bounce z-[1000]"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

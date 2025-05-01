@@ -4,6 +4,7 @@ import "./globals.css";
 import CursorAnimation from "./components/CursorAnimation";
 import NavSticky from "./components/Sticky/NavSticky";
 import BtnWathsApp from "./components/BtnWathsApp";
+import Footer from "./components/Footer/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,8 +17,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Softwares | MachinaFusion", 
-  description: "MachinaFusion is a software development company that specializes in creating innovative and efficient software solutions for businesses of all sizes.",
+  title: "Softwares | MachinaFusion",
+  description:
+    "MachinaFusion is a software development company that specializes in creating innovative and efficient software solutions for businesses of all sizes.",
 };
 
 export default function RootLayout({
@@ -35,6 +37,7 @@ export default function RootLayout({
         <BtnWathsApp />
 
         {children}
+        <Footer />
       </body>
     </html>
   );

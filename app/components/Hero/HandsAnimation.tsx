@@ -7,12 +7,12 @@ export default function HandsAnimation() {
   return (
     <div className="flex items-center justify-center">
       <motion.div
-        initial={{ x: -500 }}
-        whileInView={{ x: 120 }} // الأنيميشين ده هيتنفذ لما العنصر يظهر في الviewport
+        initial={{ x: -550 }}
+        whileInView={{ x: -200 }} 
         transition={{
-          duration: 4,
-          repeat: 1,
-          repeatType: "reverse",
+          duration: 3,
+          // repeat: 1,
+          // repeatType: "reverse",
           delay: 1,
           ease: "easeInOut",
         }}
@@ -26,12 +26,12 @@ export default function HandsAnimation() {
       </motion.div>
 
       <motion.div
-        initial={{ x: 500 }}
-        whileInView={{ x: -120 }} // الأنيميشين ده هيتنفذ لما العنصر يظهر في الviewport
+        initial={{ x: 550 }}
+        whileInView={{ x: 200 }} // الأنيميشين ده هيتنفذ لما العنصر يظهر في الviewport
         transition={{
-          duration: 4,
-          repeat: 1,
-          repeatType: "reverse",
+          duration: 3,
+          // repeat: 1,
+          // repeatType: "reverse",
           delay: 1,
           ease: "easeInOut",
         }}

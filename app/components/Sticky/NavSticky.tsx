@@ -66,7 +66,7 @@ const NavSticky = () => {
         onHoverEnd={() => setHovering(false)}
         onFocus={() => setHovering(true)}
         onBlur={() => setHovering(false)}
-        className="fixed bottom-4 sm:bottom-6 left-1/2 transform -translate-x-1/2 bg-black/70 backdrop-blur-md px-2 sm:px-4 py-2 flex gap-1 sm:gap-2 md:gap-3 lg:gap-4 rounded-full z-50 border border-white/10 shadow-2xl"
+        className="fixed  bottom-4 sm:bottom-6 left-6 md:left-12 transform -translate-x-1/2 bg-gray-100  backdrop-blur-md px-1 sm:px-3 py-2 flex flex-col gap-1 sm:gap-2 md:gap-3 lg:gap-4 rounded-full z-[1000] border border-white/10 shadow-2xl"
         aria-label="Social media navigation"
         role="navigation"
       >
@@ -76,7 +76,7 @@ const NavSticky = () => {
             href={link.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="p-2 sm:p-3 rounded-full flex text-lg transition-colors text-white hover:bg-black/30 hover:text-white focus:outline-none focus:ring-2 focus:ring-white/20 focus-visible:ring-2"
+            className="p-2 md:p-1 sm:p-3 rounded-full flex text-lg transition-colors text-black hover:bg-black/30 hover:text-white focus:outline-none focus:ring-2 focus:ring-white/20 focus-visible:ring-2"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
             initial={{ opacity: 0, y: 20 }}
