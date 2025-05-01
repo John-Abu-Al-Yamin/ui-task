@@ -13,7 +13,7 @@ const BtnWathsApp = () => {
       target="_blank"
       rel="noopener noreferrer"
       className="fixed  md:flex  bottom-4 right-4 md:right-8 md:bottom-8 
-                 bg-green-600 text-white px-5 py-3 rounded-full shadow-xl 
+                 bg-green-600 text-white px-3 py-3 rounded-full shadow-xl 
                  hover:bg-green-700 hover:shadow-2xl transition duration-300 
                  items-center gap-2 animate-bounce z-[1000]"
     >
