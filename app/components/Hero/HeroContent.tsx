@@ -9,7 +9,7 @@ const HeroContent = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: false }}
         transition={{ duration: 0.8 }}
-        className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-4 text-black font-mono uppercase tracking-tighter drop-shadow-xl"
+        className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-4 dark:text-white text-black font-mono uppercase tracking-tighter drop-shadow-xl"
       >
         MachinaFusion
       </motion.h1>
@@ -21,7 +21,7 @@ const HeroContent = () => {
         transition={{ duration: 0.8, delay: 0.2 }}
         className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mt-6"
       >
-        <span className="text-gray-300 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light italic">
+        <span className="dark:text-gray-500 text-gray-300 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light italic">
           Intelligence
         </span>{" "}
         that feels

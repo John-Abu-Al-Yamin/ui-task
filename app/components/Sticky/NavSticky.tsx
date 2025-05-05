@@ -42,11 +42,7 @@ const NavSticky = () => {
       icon: <Linkedin className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />,
       label: "LinkedIn"
     },
-    {
-      href: "https://github.com/John-Abu-Al-Yamin",
-      icon: <Github className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />,
-      label: "GitHub"
-    }
+    
   ];
 
   // Show the nav when at the top, actively scrolling up, or hovering

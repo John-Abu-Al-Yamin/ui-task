@@ -11,7 +11,7 @@ const InformationSection = () => {
       transition={{ duration: 0.8 }}
     >
       <h2 className="font-bold text-lg tracking-tight">Plance Engineering</h2>
-      <p className="text-muted-foreground leading-relaxed text-gray-600">
+      <p className=" leading-relaxed dark:text-gray-400 text-gray-600">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat vero,
         earum reiciendis deserunt totam ipsam magni suscipit at.
       </p>

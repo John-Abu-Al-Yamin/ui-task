@@ -50,7 +50,7 @@ const SectionVideo = () => {
           MachinaFusion
         </p> */}
         {/* Centered text */}
-        <motion.p className="text-gray-400 text-4xl md:text-5xl font-bold absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+        <motion.p className="dark:text-white text-gray-400 text-4xl md:text-5xl font-bold absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
           MachinaFusion
         </motion.p>
 

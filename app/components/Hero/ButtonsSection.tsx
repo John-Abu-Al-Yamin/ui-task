@@ -13,8 +13,8 @@ const ButtonsSection = () => {
       {["Placeat", "Ai", "Lorem"].map((text, index) => (
         <motion.button
           key={text}
-          className={`border border-gray-300 py-2 px-6 rounded-full text-sm font-medium hover:bg-gray-50 transition-colors ${
-            text === "Ai" ? "bg-gray-50 hover:bg-gray-100" : ""
+          className={`border dark:border-gray-700 border-gray-300 py-2 px-6 rounded-full text-sm font-medium dark:hover:bg-gray-800 hover:bg-gray-50 transition-colors ${
+            text === "Ai" ? "dark:bg-gray-800 bg-gray-50 hover:bg-gray-100" : ""
           }`}
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

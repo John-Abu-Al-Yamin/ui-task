@@ -5,6 +5,7 @@ import CursorAnimation from "./components/CursorAnimation";
 import NavSticky from "./components/Sticky/NavSticky";
 import BtnWathsApp from "./components/BtnWathsApp";
 import Footer from "./components/Footer/Footer";
+import { ThemeProvider } from "./components/theme-provider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,16 +29,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased !overflow-x-hidden`}
       >
-        <CursorAnimation />
-        <NavSticky />
-        <BtnWathsApp />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <CursorAnimation />
+          <NavSticky />
+          {/* <BtnWathsApp /> */}
 
-        {children}
-        <Footer />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -9,7 +9,7 @@ import ButtonsSection from "./ButtonsSection";
 
 const Hero = () => {
   return (
-    <div className="py-10">
+    <div className="py-10 dark:bg-black bg-white dark:text-white text-black">
       <div className="relative flex items-center justify-center h-[calc(100vh-80px)] overflow-hidden">
         <BackgroundCircle />
         <HeroContent />
@@ -34,7 +34,7 @@ const Hero = () => {
           viewport={{ once: false }}
           transition={{ duration: 0.6, delay: 0.3 }}
         >
-          <div className="h-24 w-px bg-gray-800"></div>
+          <div className="h-24 w-px dark:bg-gray-100 bg-gray-800"></div>
         </motion.div>
 
         <ButtonsSection />
