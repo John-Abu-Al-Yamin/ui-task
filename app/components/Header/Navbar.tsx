@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { Voicemail, Menu, X } from "lucide-react";
+import {  Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ModeToggle } from "@/app/ThemBtn";
 import Image from "next/image";
@@ -28,7 +28,6 @@ const Navbar = () => {
         >
           <div className="flex items-center gap-2">
             <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }} className="">
-              {/* <Voicemail className="w-7 h-7 sm:w-9 sm:h-9 dark:text-white text-black" /> */}
               <Image
                 src="/image/hum-hands/Encrypt Brain Logo.svg"
                 alt="logo"

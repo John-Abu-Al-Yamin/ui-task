@@ -5,7 +5,6 @@ import {
   Facebook,
   Mail,
   Linkedin,
-  Github,
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useScrollDirection } from "@/app/hook/useScrollDirection";

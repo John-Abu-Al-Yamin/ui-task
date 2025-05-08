@@ -3,7 +3,6 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import CursorAnimation from "./components/CursorAnimation";
 import NavSticky from "./components/Sticky/NavSticky";
-import BtnWathsApp from "./components/BtnWathsApp";
 import Footer from "./components/Footer/Footer";
 import { ThemeProvider } from "./components/theme-provider";
 

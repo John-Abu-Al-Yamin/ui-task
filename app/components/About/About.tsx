@@ -54,8 +54,8 @@ const About = () => {
           Who Are We?
         </motion.h1>
         <motion.p className="text-xs sm:text-sm font-bold mb-6">
-          A subsidiary of 77Media Digital Holding. We are a digital solutions
-          partner, implementer & advisor...
+          A subsidiary of Media Digital Holding We are a digital solutions
+          partner implementer and advisor
         </motion.p>
       </div>
 
@@ -82,9 +82,9 @@ const About = () => {
               <p className="dark:text-white text-black">Quality</p>
             </div>
             <p className="dark:text-gray-400 text-sm  text-black ">
-              We believe that quality should never be sacrificed and that it's
+              We believe that quality should never be sacrificed and that it is
               better to leave the work untouched than to deliver it with less
-              than expected quality.
+              than expected quality
             </p>
           </div>
         </motion.div>
@@ -104,9 +104,9 @@ const About = () => {
               <p className="">Creativity</p>
             </div>
             <p className="dark:text-gray-400 text-sm  text-black ">
-              Our talented team will generate creative ideas for your project.
-              Just bring us your ideas and your needs, and let us build your
-              solution.
+              Our talented team will generate creative ideas for your project
+              Just bring us your ideas and your needs and let us build your
+              solution
             </p>
           </div>{" "}
         </motion.div>
@@ -128,7 +128,7 @@ const About = () => {
             <p className="dark:text-gray-400 text-sm  ">
               We are experienced developers and have years of knowledge and
               experience that we bring to the table. We have been on the market
-              since 2010!
+              since 2010
             </p>
           </div>{" "}
         </motion.div>
@@ -148,9 +148,9 @@ const About = () => {
               <p className="">Cost</p>
             </div>
             <p className="dark:text-gray-400 text-sm  text-black">
-              We offer competitive pricing for your project. We guarantee to
+              We offer competitive pricing for your project We guarantee to
               give you a cost-effective solution without compromising the
-              quality.
+              quality
             </p>
           </div>{" "}
         </motion.div>

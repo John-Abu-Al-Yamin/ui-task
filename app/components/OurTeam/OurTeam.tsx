@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from 'next/image';
 
 const OurTeam = () => {
   return (
@@ -72,16 +73,17 @@ const OurTeam = () => {
 };
 
 const TeamCard = () => (
-  <a
-    href="#"
+  <div
     className="block rounded-md border  border-gray-300 p-4 shadow-sm sm:p-6"
   >
     <div className="sm:flex sm:justify-between sm:gap-4 lg:gap-6">
       <div className="sm:order-last sm:shrink-0">
-        <img
-          alt=""
-          src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1180&q=80"
+        <Image
+          alt="card"
+          src="https://placehold.co/600x400/EEE/31343C.png"
           className="size-16 rounded-full object-cover sm:size-[72px]"
+          width={72}
+          height={72}
         />
       </div>
 
@@ -103,7 +105,7 @@ const TeamCard = () => (
         <dd className="text-xs dark:text-gray-300 text-gray-700">31/06/2025</dd>
       </div>
     </dl>
-  </a>
+  </div>
 );
 
 export default OurTeam;

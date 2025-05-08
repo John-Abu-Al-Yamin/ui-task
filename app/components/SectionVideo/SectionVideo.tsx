@@ -1,6 +1,5 @@
 "use client";
 import { motion } from "framer-motion";
-import SectionCard from "../SectionCard/SectionCard";
 
 const SectionVideo = () => {
   const containerVariants = {
