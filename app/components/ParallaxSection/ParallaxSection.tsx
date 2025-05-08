@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import ParallaxText from "./ParallaxText";
 import { Voicemail } from "lucide-react";
+import Image from "next/image";
 
 export default function ParallaxSection() {
   return (
@@ -72,8 +73,13 @@ export default function ParallaxSection() {
         transition={{ duration: 0.8 }}
         className="flex justify-center items-center mt-20"
       >
-        <Voicemail className="w-10 h-10" />
-      </motion.div>
+<Image
+                src="/image/hum-hands/Encrypt Brain Logo.svg"
+                alt="logo"
+                width={100}
+                height={100}
+                className=" mt-4 text-center"
+              />      </motion.div>
     </div>
   );
 }

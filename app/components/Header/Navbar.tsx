@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Voicemail, Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ModeToggle } from "@/app/ThemBtn";
+import Image from "next/image";
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -26,10 +27,17 @@ const Navbar = () => {
           transition={{ delay: 0.2, duration: 0.5 }}
         >
           <div className="flex items-center gap-2">
-            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-              <Voicemail className="w-7 h-7 sm:w-9 sm:h-9 dark:text-white text-black" />
+            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }} className="">
+              {/* <Voicemail className="w-7 h-7 sm:w-9 sm:h-9 dark:text-white text-black" /> */}
+              <Image
+                src="/image/hum-hands/Encrypt Brain Logo.svg"
+                alt="logo"
+                width={100}
+                height={100}
+                className=" mt-4 text-center"
+              />
             </motion.div>
-            <span className="dark:text-white text-black font-bold text-sm sm:text-base">
+            <span className="block dark:text-white text-black font-bold text-xl ">
               Machinafusion
             </span>
           </div>

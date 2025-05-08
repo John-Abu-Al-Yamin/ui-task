@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
+import Image from "next/image"
 
 const CursorAnimation = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
@@ -34,8 +35,8 @@ const CursorAnimation = () => {
     <motion.div
       className="fixed top-0 left-0 pointer-events-none z-[9999]"
       animate={{
-        x: mousePosition.x - 20, // نص الـ SVG 40px
-        y: mousePosition.y - 20,
+        x: mousePosition.x - 50, // Half of image width for centering
+        y: mousePosition.y - 50, // Half of image height for centering
       }}
       transition={{
         type: "spring",
@@ -44,60 +45,25 @@ const CursorAnimation = () => {
         mass: 0.5,
       }}
       style={{
-        width: "40px",
-        height: "40px",
+        width: "100px",
+        height: "100px",
         pointerEvents: "none",
-        mixBlendMode: "difference", // اختيارية لو عايزة تبيني المؤشر أوضح
       }}
     >
-      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        {/* Robot Head */}
-        <motion.rect
-          x="8"
-          y="5"
-          width="24"
-          height="20"
-          rx="4"
-          fill="black"
-          animate={{
-            scale: isPointing ? 0.95 : 1,
-          }}
-          transition={{ duration: 0.2 }}
+      <motion.div
+        animate={{
+          scale: isPointing ? 0.9 : 1,
+        }}
+        transition={{ duration: 0.2 }}
+      >
+        <Image
+          src="/image/hum-hands/Encrypt Brain Logo.svg"
+          alt="cursor"
+          width={100}
+          height={100}
+          className="select-none"
         />
-
-        {/* Robot Eyes */}
-        <circle cx="15" cy="12" r="3" fill="#00AAFF" />
-        <circle cx="25" cy="12" r="3" fill="#00AAFF" />
-
-        {/* Robot Mouth */}
-        <rect x="14" y="18" width="12" height="2" rx="1" fill="#444" />
-
-        {/* Robot Finger */}
-        <motion.path
-          d="M20 25 L20 35 L23 35 L23 25"
-          stroke="black"
-          strokeWidth="4"
-          strokeLinecap="round"
-          fill="black"
-          animate={{
-            y: isPointing ? 2 : 0,
-          }}
-          transition={{ duration: 0.2 }}
-        />
-
-        {/* Finger Tip */}
-        <motion.circle
-          cx="21.5"
-          cy="35"
-          r="3.5"
-          fill="black"
-          animate={{
-            y: isPointing ? 2 : 0,
-            scale: isPointing ? 1.2 : 1,
-          }}
-          transition={{ duration: 0.2 }}
-        />
-      </svg>
+      </motion.div>
     </motion.div>
   )
 }
