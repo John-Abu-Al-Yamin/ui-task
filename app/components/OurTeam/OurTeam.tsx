@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const OurTeam = () => {
   return (
-    <div className="py-10 px-2 h-dvh">
+    <div className="py-10 px-2 ">
       <div className="text-center mb-10">
         <motion.p
           className="text-xs sm:text-sm font-bold mb-6 dark:text-white text-black"

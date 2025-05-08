@@ -76,12 +76,12 @@ const About = () => {
           transition={{ duration: 0.8 }}
           variants={cardVariants}
         >
-          <div className="p-3">
+          <div className=" p-1 md:p-3">
             <div className="flex items-center justify-center gap-2  ">
-              <Atom className="w-10 h-10  " />
-              <p className="dark:text-white text-black">Quality</p>
+              <Atom className="w-6 h-6 md:w-10 md:h-10  " />
+              <p className="text-sm md:text-lg dark:text-white text-black">Quality</p>
             </div>
-            <p className="dark:text-gray-400 text-sm  text-black ">
+            <p className="text-sm dark:text-gray-400   text-black line-clamp-4">
               We believe that quality should never be sacrificed and that it is
               better to leave the work untouched than to deliver it with less
               than expected quality
@@ -100,10 +100,10 @@ const About = () => {
         >
           <div className="p-3">
             <div className="flex items-center justify-center gap-2  ">
-              <Brain className="w-10 h-10  " />
-              <p className="">Creativity</p>
+              <Brain className="6 h-6 md:w-10 md:h-10  " />
+              <p className="text-sm md:text-lg dark:text-white text-black">Creativity</p>
             </div>
-            <p className="dark:text-gray-400 text-sm  text-black ">
+            <p className="text-sm dark:text-gray-400   text-black line-clamp-4 ">
               Our talented team will generate creative ideas for your project
               Just bring us your ideas and your needs and let us build your
               solution
@@ -122,10 +122,10 @@ const About = () => {
         >
           <div className="p-3">
             <div className="flex items-center justify-center gap-2  ">
-              <CreativeCommons className="w-10 h-10  " />
-              <p className="">Experience</p>
+              <CreativeCommons className="6 h-6 md:w-10 md:h-10  " />
+              <p className="text-sm md:text-lg dark:text-white text-black">Experience</p>
             </div>
-            <p className="dark:text-gray-400 text-sm  ">
+            <p className="text-sm dark:text-gray-400   text-black line-clamp-4  ">
               We are experienced developers and have years of knowledge and
               experience that we bring to the table. We have been on the market
               since 2010
@@ -144,10 +144,10 @@ const About = () => {
         >
           <div className="p-3">
             <div className="flex items-center justify-center gap-2  ">
-              <Maximize className="w-10 h-10  " />
-              <p className="">Cost</p>
+              <Maximize className="6 h-6 md:w-10 md:h-10  " />
+              <p className="text-sm md:text-lg dark:text-white text-black">Cost</p>
             </div>
-            <p className="dark:text-gray-400 text-sm  text-black">
+            <p className="text-sm dark:text-gray-400   text-black line-clamp-4">
               We offer competitive pricing for your project We guarantee to
               give you a cost-effective solution without compromising the
               quality
