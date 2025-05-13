@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import CursorAnimation from "./components/CursorAnimation";
 import NavSticky from "./components/Sticky/NavSticky";
 import Footer from "./components/Footer/Footer";
 import { ThemeProvider } from "./components/theme-provider";

@@ -1,7 +1,6 @@
 import About from "./components/About/About";
 import Navbar from "./components/Header/Navbar";
 import Hero from "./components/Hero/Hero";
-import UnderSection from "./components/Hero/UnderSection";
 import OurTeam from "./components/OurTeam/OurTeam";
 import ParallaxSection from "./components/ParallaxSection/ParallaxSection";
 import SectionCard from "./components/SectionCard/SectionCard";

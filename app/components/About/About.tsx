@@ -57,8 +57,8 @@ const About = () => {
         <motion.p className="text-xs sm:text-sm font-bold mb-6">
           Brain Encrypt is a tech startup founded in January 2025 and
           headquartered in Egypt. We specialize in delivering cutting-edge
-          digital solutions for clients across the Gulf and Europe, with a focus
-          on mobile and web app development, UI/UX, and software quality
+          digital solutions for clients across the Gulf and Europe with a focus
+          on mobile and web app development UI/UX and software quality
           services.
         </motion.p>
       </div>
@@ -89,7 +89,7 @@ const About = () => {
             </div>
             <p className="text-xs font-bold dark:text-gray-400   text-black line-clamp-4">
               We believe quality should never be compromised. If a task can't be
-              delivered at the highest standard, it's better left untouched than
+              delivered at the highest standard it is better left untouched than
               completed below expectations
             </p>
           </div>
@@ -112,7 +112,7 @@ const About = () => {
               </p>
             </div>
             <p className="text-xs font-bold dark:text-gray-400   text-black line-clamp-4">
-              Bring us your vision, Our talented team will craft a creative,
+              Bring us your vision Our talented team will craft a creative
               intelligent solution tailored just for you
             </p>
           </div>{" "}
@@ -135,7 +135,7 @@ const About = () => {
               </p>
             </div>
             <p className="text-xs font-bold dark:text-gray-400   text-black line-clamp-4">
-              Backed by engineers with over 10 years of industry experience, we
+              Backed by engineers with over 10 years of industry experience we
               bring seasoned expertise and insight to every project we undertake
             </p>
           </div>{" "}
@@ -158,7 +158,7 @@ const About = () => {
               </p>
             </div>
             <p className="text-xs font-bold dark:text-gray-400   text-black line-clamp-4">
-              Our pricing is designed to be competitive and transparent,
+              Our pricing is designed to be competitive and transparent
               ensuring you receive exceptional value and high-quality results
               every time
             </p>
@@ -183,7 +183,7 @@ const About = () => {
               </p>
             </div>
             <p className="text-xs font-bold dark:text-gray-400   text-black line-clamp-4">
-              We approach every project with a strong focus on timely delivery,
+              We approach every project with a strong focus on timely delivery
               aiming to stay within deadlines while maintaining the highest
               standards of quality
             </p>

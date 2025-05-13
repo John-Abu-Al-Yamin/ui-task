@@ -1,6 +1,3 @@
-"use client"
-import { motion } from "framer-motion";
-
 import BackgroundCircle from "./BackgroundCircle";
 import HeroContent from "./HeroContent";
 import HandsAnimation from "./HandsAnimation";
@@ -15,8 +12,6 @@ const Hero = () => {
           <HandsAnimation />
         </div>
       </div>
-
-
     </div>
   );
 };
