@@ -58,8 +58,7 @@ const About = () => {
           Brain Encrypt is a tech startup founded in January 2025 and
           headquartered in Egypt. We specialize in delivering cutting-edge
           digital solutions for clients across the Gulf and Europe with a focus
-          on mobile and web app development UI/UX and software quality
-          services.
+          on mobile and web app development UI/UX and software quality services.
         </motion.p>
       </div>
 
@@ -88,9 +87,9 @@ const About = () => {
               </p>
             </div>
             <p className="text-xs font-bold dark:text-gray-400   text-black line-clamp-4">
-              We believe quality should never be compromised. If a task can't be
-              delivered at the highest standard it is better left untouched than
-              completed below expectations
+              We believe quality should never be compromised. If a task
+              can&apos;t be delivered at the highest standard it is better left
+              untouched than completed below expectations
             </p>
           </div>
         </motion.div>
@@ -106,7 +105,7 @@ const About = () => {
         >
           <div className="p-3">
             <div className="flex items-center justify-center gap-2  ">
-              <Brain className="6 h-6 md:w-10 md:h-10  " />
+              <Brain className="w-6 h-6 md:w-10 md:h-10  " />
               <p className="text-sm md:text-lg dark:text-white text-black">
                 Creativity
               </p>
@@ -158,9 +157,8 @@ const About = () => {
               </p>
             </div>
             <p className="text-xs font-bold dark:text-gray-400   text-black line-clamp-4">
-              Our pricing is designed to be competitive and transparent
-              ensuring you receive exceptional value and high-quality results
-              every time
+              Our pricing is designed to be competitive and transparent ensuring
+              you receive exceptional value and high-quality results every time
             </p>
           </div>{" "}
         </motion.div>
