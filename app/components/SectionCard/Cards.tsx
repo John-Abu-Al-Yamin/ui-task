@@ -1,7 +1,36 @@
 "use client";
+
 import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
+
+const cardData = [
+  {
+    title: "Mobile App Development",
+    description:
+      "We bring more than just strong coding skills to the table. Our experience sets us apart in creating impactful apps that transform how people work and live, using Swift and Kotlin for native development, and React Native, Flutter for cross-platform solutions",
+  },
+  {
+    title: "Modern Web Applications",
+    description:
+      "We specialize in both frontend and backend web development, crafting seamless, scalable web solutions. On the frontend, we use React.js, Angular, Vue.js, HTML5, CSS3, JavaScript, TypeScript, Next.js, and Tailwind CSS. For the backend, we leverage Node.js, .NET, PHP, Laravel, Django, and Spring Boot to build robust, high-performance applications",
+  },
+  {
+    title: "UI/UX Design",
+    description:
+      "Deliver the product you need on time with an experienced team that follows a clear, efficient design process",
+  },
+  {
+    title: "Testing",
+    description:
+      "Turn to our experts for comprehensive, multi-stage testing and auditing of your software, covering manual and automated testing, performance, and security to ensure quality and reliability at every stage.",
+  },
+  {
+    title: "Tech Consulting & Support",
+    description:
+      "Rely on our experts to eliminate workflow inefficiencies, integrate cutting-edge technologies, and streamline your app portfolio",
+  },
+];
 
 const cardVariants = {
   hover: {
@@ -17,83 +46,47 @@ const cardVariants = {
 };
 
 const Cards = () => {
+  // use some directional animations for entrance if desired
+  const directions = [
+    { x: 100 },
+    { y: 100 },
+    { y: -100 },
+    { x: -100 },
+    { x: -100 },
+  ];
+
   return (
     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-      <motion.div
-        className="rounded overflow-hidden"
-        initial={{ opacity: 0, x: 100 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        whileHover="hover"
-        whileTap="tap"
-        viewport={{ once: false }}
-        transition={{ duration: 0.8 }}
-        variants={cardVariants}
-      >
-        <Image
-          src="https://placehold.co/600x400/EEE/31343C.png"
-          alt="card"
-          className="w-full h-auto rounded-md"
-          width={600}
-          height={400}
-        />
-      </motion.div>
-
-      <motion.div
-        className="rounded overflow-hidden"
-        initial={{ opacity: 0, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        whileHover="hover"
-        whileTap="tap"
-        viewport={{ once: false }}
-        transition={{ duration: 0.8 }}
-        variants={cardVariants}
-      >
-        <Image
-          src="https://placehold.co/600x400/EEE/31343C.png"
-          alt="card"
-          className="w-full h-auto rounded-md"
-          width={600}
-          height={400}
-        />
-      </motion.div>
-
-      <motion.div
-        className="rounded overflow-hidden"
-        initial={{ opacity: 0, y: -100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        whileHover="hover"
-        whileTap="tap"
-        viewport={{ once: false }}
-        transition={{ duration: 0.8 }}
-        variants={cardVariants}
-      >
-        <Image
-          src="https://placehold.co/600x400/EEE/31343C.png"
-          alt="card"
-          className="w-full h-auto rounded-md"
-          width={600}
-          height={400}
-        />
-      </motion.div>
-
-      <motion.div
-        className="rounded overflow-hidden"
-        initial={{ opacity: 0, x: -100 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        whileHover="hover"
-        whileTap="tap"
-        viewport={{ once: false }}
-        transition={{ duration: 0.8 }}
-        variants={cardVariants}
-      >
-        <Image
-          src="https://placehold.co/600x400/EEE/31343C.png"
-          alt="card"
-          className="w-full h-auto rounded-md"
-          width={600}
-          height={400}
-        />
-      </motion.div>
+      {cardData.map((card, index) => (
+        <motion.div
+          key={index}
+          className="rounded overflow-hidden relative"
+          initial={{ opacity: 0, ...directions[index % directions.length] }}
+          whileInView={{ opacity: 1, x: 0, y: 0 }}
+          whileHover="hover"
+          whileTap="tap"
+          viewport={{ once: false }}
+          transition={{ duration: 0.8 }}
+          variants={cardVariants}
+        >
+          <Image
+            src="https://placehold.co/600x400/EEE/31343C.png"
+            alt="card"
+            className="w-full h-full rounded-md object-cover"
+            width={600}
+            height={400}
+          />
+          <motion.div
+            className="absolute left-0 right-0 bg-black bg-opacity-70 text-white p-1 lg:p-4 overflow-y-auto scroll-hidden"
+            initial={{ top: "auto", bottom: 0, height: "30%" }}
+            whileHover={{ top: 0, bottom: 0, height: "100%" }}
+            transition={{ duration: 0.3, ease: "easeOut" }}
+          >
+            <h3 className="text-base font-semibold">{card.title}</h3>
+            <p className="text-xs">{card.description}</p>
+          </motion.div>
+        </motion.div>
+      ))}
     </div>
   );
 };

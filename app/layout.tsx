@@ -38,12 +38,14 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <CursorAnimation />
+          {/* <CursorAnimation /> */}
           <NavSticky />
           {/* <BtnWathsApp /> */}
 
           {children}
-          <Footer />
+          <section className="h-dvh snap-start">
+            <Footer />
+          </section>
         </ThemeProvider>
       </body>
     </html>

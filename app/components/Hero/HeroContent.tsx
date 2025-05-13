@@ -21,10 +21,10 @@ const HeroContent = () => {
         transition={{ duration: 0.8, delay: 0.2 }}
         className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mt-6"
       >
-        <span className="dark:text-gray-500 text-gray-300 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light italic">
-          Intelligence
+        <span className="dark:text-gray-500 text-gray-300 text-4xl sm:text-5xl md:text-6xl lg:text-5xl font-light italic">
+          Encrypted Ideas{" "}
         </span>{" "}
-        that feels
+        Intelligent Execution{" "}
       </motion.p>
     </div>
   );

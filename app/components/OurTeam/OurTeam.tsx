@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const OurTeam = () => {
   return (
-    <div className="py-10 px-2 ">
+    <div className="py-4 lg:py-10 px-2 ">
       <div className="text-center mb-10">
         <motion.p
           className="text-xs sm:text-sm font-bold mb-6 dark:text-white text-black"
@@ -27,7 +27,7 @@ const OurTeam = () => {
         </motion.h1>
       </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-2 lg:p-4">
         {/* Card 1 */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -92,10 +92,7 @@ const TeamCard = () => (
           John Doe
         </h3>
         <p className="mt-1 text-sm dark:text-gray-300 text-gray-700">Front End Developer</p>
-        <p className="mt-4 line-clamp-2 text-sm text-pretty dark:text-gray-300 text-gray-700">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. At velit
-          illum provident a, ipsa maiores deleniti consectetur nobis et eaque.
-        </p>
+        
       </div>
     </div>
 

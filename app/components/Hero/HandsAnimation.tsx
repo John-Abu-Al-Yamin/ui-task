@@ -42,7 +42,7 @@ export default function HandsAnimation() {
           alt="Cyborg Hand"
           width={300}
           height={300}
-          className="w-[180px] md:w-[200px] lg:w-[450px] object-cover"
+          className="w-[220px] md:w-[250px] lg:w-[450px] object-cover"
         />
       </motion.div>
 
@@ -64,7 +64,7 @@ export default function HandsAnimation() {
           alt="Human Hand"
           width={300}
           height={300}
-          className="w-[180px] md:w-[150px] lg:w-[450px] object-cover"
+          className="w-[220px] md:w-[250px] lg:w-[450px] object-cover"
         />
       </motion.div>
     </div>

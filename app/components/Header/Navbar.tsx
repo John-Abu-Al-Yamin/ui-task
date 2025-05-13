@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import {  Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ModeToggle } from "@/app/ThemBtn";
 import Image from "next/image";
@@ -27,13 +27,17 @@ const Navbar = () => {
           transition={{ delay: 0.2, duration: 0.5 }}
         >
           <div className="flex items-center gap-2">
-            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }} className="">
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              className=""
+            >
               <Image
                 src="/image/hum-hands/Encrypt Brain Logo.svg"
                 alt="logo"
                 width={100}
                 height={100}
-                className=" mt-4 text-center"
+                className=" mt-4 text-center "
               />
             </motion.div>
             <span className="block dark:text-white text-black font-bold text-xl ">
@@ -61,21 +65,21 @@ const Navbar = () => {
             <ul className="flex items-center justify-center gap-x-4 w-full h-full text-black">
               <li
                 id="about"
-                className="font-bold text-sm hover:text-gray-500 hover:scale-105 transition-all duration-200 "
+                className="font-bold cursor-pointer text-sm hover:text-gray-500 hover:scale-105 transition-all duration-200 "
               >
                 About
               </li>
               <li
                 id="service"
-                className="font-bold text-sm hover:text-gray-500 hover:scale-105 transition-all duration-200 "
+                className="font-bold cursor-pointer text-sm hover:text-gray-500 hover:scale-105 transition-all duration-200 "
               >
                 Service
               </li>
               <li
-                id="contact"
-                className="font-bold text-sm hover:text-gray-500 hover:scale-105 transition-all duration-200 "
+                id="partners"
+                className="font-bold cursor-pointer text-sm hover:text-gray-500 hover:scale-105 transition-all duration-200 "
               >
-                Contact
+                Partners
               </li>
             </ul>
           </motion.div>
@@ -112,14 +116,14 @@ const Navbar = () => {
                 whileHover={{ scale: 1.02 }}
               >
                 <ul className="flex items-center justify-center gap-x-4 w-full h-full text-black">
-                  <li className="dark:text-white text-black font-bold text-sm hover:text-gray-500 hover:scale-105 transition-all duration-200 ">
+                  <li className="font-bold text-sm hover:text-gray-500 hover:scale-105 transition-all duration-200 ">
                     About
                   </li>
                   <li className="font-bold text-sm hover:text-gray-500 hover:scale-105 transition-all duration-200 ">
                     Service
                   </li>
                   <li className="font-bold text-sm hover:text-gray-500 hover:scale-105 transition-all duration-200 ">
-                    Contact
+                    Partners
                   </li>
                 </ul>
               </motion.div>

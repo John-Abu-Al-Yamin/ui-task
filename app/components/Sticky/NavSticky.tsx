@@ -22,7 +22,7 @@ const NavSticky = () => {
   const links: NavigationLink[] = [
     
     {
-      href: "https://api.whatsapp.com/send?phone=201286976691",
+      href: "https://api.whatsapp.com/send?phone=201044950655",
       icon: <PhoneCall className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />,
       label: "WhatsApp"
     },
@@ -32,7 +32,7 @@ const NavSticky = () => {
       label: "Facebook"
     },
     {
-      href: "mailto:je0409389@gmail.com",
+      href: "mailto:it@encryptbrain.com",
       icon: <Mail className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />,
       label: "Email"
     },
