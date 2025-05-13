@@ -60,7 +60,7 @@ const Cards = () => {
       {cardData.map((card, index) => (
         <motion.div
           key={index}
-          className="rounded overflow-hidden relative"
+          className="rounded overflow-hidden relative sm:h-38"
           initial={{ opacity: 0, ...directions[index % directions.length] }}
           whileInView={{ opacity: 1, x: 0, y: 0 }}
           whileHover="hover"
