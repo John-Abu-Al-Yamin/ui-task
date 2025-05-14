@@ -50,13 +50,15 @@ const SectionVideo = () => {
         </p> */}
         {/* Centered text */}
         <motion.p className="dark:text-white text-gray-400 text-4xl md:text-5xl font-bold absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
-          MachinaFusion
+          Brain Encrypt
         </motion.p>
 
         {/* Bottom text */}
         <motion.p className="text-gray-200 w-72 text-xl font-bold absolute bottom-10 right-5 z-10">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium
-          repellat distinctio saepe? Hic fuga sed ab quo quasi qui error
+          Brain Encrypt is an Egypt-based tech startup founded in January 2025,
+          specializing in innovative digital solutions in web and mobile
+          development, UI/UX, and software quality for clients in the Gulf and
+          Europe.
         </motion.p>
       </div>
     </motion.div>

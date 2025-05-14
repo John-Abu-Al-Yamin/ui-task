@@ -3,8 +3,9 @@ import Navbar from "./components/Header/Navbar";
 import Hero from "./components/Hero/Hero";
 import OurTeam from "./components/OurTeam/OurTeam";
 import ParallaxSection from "./components/ParallaxSection/ParallaxSection";
-import SectionCard from "./components/SectionCard/SectionCard";
+import ServicesSection from "./components/ServicesSection/ServicesSection";
 import SectionVideo from "./components/SectionVideo/SectionVideo";
+import OurProjects from "./components/Projects/OurProjects";
 
 export default function Home() {
   return (
@@ -13,9 +14,6 @@ export default function Home() {
         <Navbar />
         <Hero />
       </section>
-      {/* <section className=" h-dvh snap-start">
-       <UnderSection/>
-      </section> */}
       <section className="h-dvh snap-start">
         <About />
       </section>
@@ -23,7 +21,10 @@ export default function Home() {
         <SectionVideo />
       </section>
       <section className=" h-dvh snap-start">
-        <SectionCard />
+        <ServicesSection />
+      </section>
+      <section className=" h-dvh snap-start">
+        <OurProjects />
       </section>
       <section className=" h-dvh snap-start">
         <ParallaxSection />

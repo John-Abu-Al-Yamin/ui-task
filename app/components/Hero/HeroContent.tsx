@@ -11,7 +11,7 @@ const HeroContent = () => {
         transition={{ duration: 0.8 }}
         className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-4 dark:text-white text-black font-mono uppercase tracking-tighter drop-shadow-xl"
       >
-        MachinaFusion
+        Brain Encrypt
       </motion.h1>
 
       <motion.p

@@ -41,7 +41,9 @@ const Navbar = () => {
               />
             </motion.div>
             <span className="block dark:text-white text-black font-bold text-xl ">
-              Machinafusion
+              Brain Encrypt
+
+
             </span>
           </div>
 

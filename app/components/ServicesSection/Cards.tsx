@@ -1,8 +1,8 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import React from "react";
 
 const cardData = [
   {
@@ -46,7 +46,8 @@ const cardVariants = {
 };
 
 const Cards = () => {
-  // use some directional animations for entrance if desired
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+
   const directions = [
     { x: 100 },
     { y: 100 },
@@ -57,36 +58,47 @@ const Cards = () => {
 
   return (
     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-      {cardData.map((card, index) => (
-        <motion.div
-          key={index}
-          className="rounded overflow-hidden relative sm:h-38"
-          initial={{ opacity: 0, ...directions[index % directions.length] }}
-          whileInView={{ opacity: 1, x: 0, y: 0 }}
-          whileHover="hover"
-          whileTap="tap"
-          viewport={{ once: false }}
-          transition={{ duration: 0.8 }}
-          variants={cardVariants}
-        >
-          <Image
-            src="https://placehold.co/600x400/EEE/31343C.png"
-            alt="card"
-            className="w-full h-full rounded-md object-cover"
-            width={600}
-            height={400}
-          />
+      {cardData.map((card, index) => {
+        const isActive = activeIndex === index;
+
+        return (
           <motion.div
-            className="absolute left-0 right-0 bg-black bg-opacity-70 text-white p-1 lg:p-4 overflow-y-auto scroll-hidden"
-            initial={{ top: "auto", bottom: 0, height: "30%" }}
-            whileHover={{ top: 0, bottom: 0, height: "100%" }}
-            transition={{ duration: 0.3, ease: "easeOut" }}
+            key={index}
+            className="rounded overflow-hidden relative sm:h-38 cursor-pointer"
+            initial={{ opacity: 0, ...directions[index % directions.length] }}
+            whileInView={{ opacity: 1, x: 0, y: 0 }}
+            whileHover="hover"
+            whileTap="tap"
+            onClick={() =>
+              setActiveIndex((prev) => (prev === index ? null : index))
+            }
+            viewport={{ once: false }}
+            transition={{ duration: 0.8 }}
+            variants={cardVariants}
           >
-            <h3 className="text-base font-semibold">{card.title}</h3>
-            <p className="text-xs">{card.description}</p>
+            <Image
+              src="https://placehold.co/600x400/EEE/31343C.png"
+              alt="card"
+              className="w-full h-full rounded-md object-cover"
+              width={600}
+              height={400}
+            />
+            <motion.div
+              className="absolute left-0 right-0 bg-black bg-opacity-70 text-white p-2 lg:p-4 overflow-y-auto scroll-hidden"
+              animate={
+                isActive
+                  ? { top: 0, bottom: 0, height: "100%" }
+                  : { top: "auto", bottom: 0, height: "30%" }
+              }
+              whileHover={{ top: 0, bottom: 0, height: "100%" }}
+              transition={{ duration: 0.3, ease: "easeOut" }}
+            >
+              <h3 className="text-base font-semibold">{card.title}</h3>
+              <p className="text-xs">{card.description}</p>
+            </motion.div>
           </motion.div>
-        </motion.div>
-      ))}
+        );
+      })}
     </div>
   );
 };

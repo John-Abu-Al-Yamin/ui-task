@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import Cards from "./Cards";
 
-const SectionCard = () => {
+const ServicesSection = () => {
   return (
     <motion.div
       id="services"
@@ -30,4 +30,4 @@ const SectionCard = () => {
   );
 };
 
-export default SectionCard;
+export default ServicesSection;

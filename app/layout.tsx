@@ -16,9 +16,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Softwares | MachinaFusion",
+  title: "Softwares | Brain Encrypt",
   description:
-    "MachinaFusion is a software development company that specializes in creating innovative and efficient software solutions for businesses of all sizes.",
+    "Brain Encrypt is a software development company that specializes in creating innovative and efficient software solutions for businesses of all sizes.",
 };
 
 export default function RootLayout({
