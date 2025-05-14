@@ -42,8 +42,6 @@ const Navbar = () => {
             </motion.div>
             <span className="block dark:text-white text-black font-bold text-xl ">
               Brain Encrypt
-
-
             </span>
           </div>
 
@@ -65,23 +63,37 @@ const Navbar = () => {
             whileHover={{ scale: 1.02 }}
           >
             <ul className="flex items-center justify-center gap-x-4 w-full h-full text-black">
-              <li
-                id="about"
-                className="font-bold cursor-pointer text-sm hover:text-gray-500 hover:scale-105 transition-all duration-200 "
-              >
-                About
+              <li className="font-bold cursor-pointer text-sm hover:text-gray-500 hover:scale-105 transition-all duration-200 ">
+                <a
+                  href="#about"
+                  className="font-bold cursor-pointer text-sm hover:text-gray-500 hover:scale-105 transition-all duration-200"
+                >
+                  About
+                </a>
               </li>
-              <li
-                id="service"
-                className="font-bold cursor-pointer text-sm hover:text-gray-500 hover:scale-105 transition-all duration-200 "
-              >
-                Service
+              <li className="font-bold cursor-pointer text-sm hover:text-gray-500 hover:scale-105 transition-all duration-200 ">
+                <a
+                  href="#services"
+                  className="font-bold cursor-pointer text-sm hover:text-gray-500 hover:scale-105 transition-all duration-200"
+                >
+                  Services
+                </a>
               </li>
-              <li
-                id="partners"
-                className="font-bold cursor-pointer text-sm hover:text-gray-500 hover:scale-105 transition-all duration-200 "
-              >
-                Partners
+              <li className="font-bold cursor-pointer text-sm hover:text-gray-500 hover:scale-105 transition-all duration-200 ">
+                <a
+                  href="#partners"
+                  className="font-bold cursor-pointer text-sm hover:text-gray-500 hover:scale-105 transition-all duration-200"
+                >
+                  Partners
+                </a>
+              </li>
+              <li className="font-bold cursor-pointer text-sm hover:text-gray-500 hover:scale-105 transition-all duration-200 ">
+                <a
+                  href="#projects"
+                  className="font-bold cursor-pointer text-sm hover:text-gray-500 hover:scale-105 transition-all duration-200"
+                >
+                  Projects
+                </a>
               </li>
             </ul>
           </motion.div>
@@ -118,14 +130,29 @@ const Navbar = () => {
                 whileHover={{ scale: 1.02 }}
               >
                 <ul className="flex items-center justify-center gap-x-4 w-full h-full text-black">
-                  <li className="font-bold text-sm hover:text-gray-500 hover:scale-105 transition-all duration-200 ">
+                  <li
+                    id="about"
+                    className="font-bold text-sm hover:text-gray-500 hover:scale-105 transition-all duration-200 "
+                  >
                     About
                   </li>
-                  <li className="font-bold text-sm hover:text-gray-500 hover:scale-105 transition-all duration-200 ">
+                  <li
+                    id="service"
+                    className="font-bold text-sm hover:text-gray-500 hover:scale-105 transition-all duration-200 "
+                  >
                     Service
                   </li>
-                  <li className="font-bold text-sm hover:text-gray-500 hover:scale-105 transition-all duration-200 ">
+                  <li
+                    id="partners"
+                    className="font-bold text-sm hover:text-gray-500 hover:scale-105 transition-all duration-200 "
+                  >
                     Partners
+                  </li>
+                  <li
+                    id="projects"
+                    className="font-bold text-sm hover:text-gray-500 hover:scale-105 transition-all duration-200 "
+                  >
+                    Projects
                   </li>
                 </ul>
               </motion.div>

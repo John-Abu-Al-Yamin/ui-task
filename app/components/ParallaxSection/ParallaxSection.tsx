@@ -47,6 +47,7 @@ export default function ParallaxSection() {
           height={100}
           className="text-center object-cover"
         />{" "}
+
       </motion.div>
     </div>
   );

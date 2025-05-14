@@ -88,7 +88,6 @@ textarea,
   cursor: none !important;
 } */
 
-
 /* Hide scrollbar for Chrome, Safari and Opera */
 .scroll-hidden::-webkit-scrollbar {
   display: none;
@@ -96,11 +95,9 @@ textarea,
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .scroll-hidden {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;     /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
-
-
 
 @layer utilities {
   .text-balance {

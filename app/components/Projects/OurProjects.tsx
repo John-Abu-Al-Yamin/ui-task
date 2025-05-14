@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const OurProjects = () => {
   return (
     <motion.div
-      id="services"
+      id="projects"
       className="py-4 lg:py-10 px-2 lg:px-20 "
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
