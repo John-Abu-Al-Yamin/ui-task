@@ -46,7 +46,7 @@ const OurPartners = () => {
               className="bg-transparent rounded-3xl"
             />
             <p
-              className="text-5xl font-bold italic mt-4 dark:text-white text-black"
+              className="text-2xl lg:text-5xl font-bold italic mt-4 dark:text-white text-black"
               style={{ fontFamily: "'Press Start 2P', cursive" }}
             >
               {partner.name}
