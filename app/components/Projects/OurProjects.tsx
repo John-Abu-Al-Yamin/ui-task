@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import HeaderSection from "../HeaderSection";
 const OurProjects = () => {
   return (
     <motion.div
@@ -10,14 +11,7 @@ const OurProjects = () => {
       viewport={{ once: false }}
       transition={{ duration: 0.8 }}
     >
-      <div className="text-center mb-4 lg:mb-10">
-        <motion.p className="text-xs sm:text-sm font-bold mb-6">
-          Brain Encrypt
-        </motion.p>
-        <motion.h1 className="text-4xl  md:text-6xl lg:text-7xl mb-4 dark:text-white text-black font-mono uppercase tracking-tighter drop-shadow-xl">
-          Our Projects
-        </motion.h1>
-      </div>
+      <HeaderSection companey="Brain Encrypt" title="Our Projects" />
       <div className="grid grid-cols-2 gap-2 md:grid-cols-3 md:gap-2">
         <motion.div
           initial={{ opacity: 0, y: 40 }}

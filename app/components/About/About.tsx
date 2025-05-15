@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { Atom, Brain, CreativeCommons, Maximize, Timer } from "lucide-react";
+import HeaderSection from "../HeaderSection";
 
 const containerVariants = {
   hidden: {},
@@ -47,20 +48,16 @@ const About = () => {
       viewport={{ once: false }}
       transition={{ duration: 0.8 }}
     >
-      <div className="text-center mb-10">
-        <motion.p className="text-xs sm:text-sm font-bold mb-6">
-          Hallow to Encrypt Brain
-        </motion.p>
-        <motion.h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-4  font-mono uppercase tracking-tighter drop-shadow-xl">
-          Who Are We?
-        </motion.h1>
-        <motion.p className="text-xs sm:text-sm font-bold mb-6">
+     
+      <HeaderSection
+        companey="Hallow to Encrypt Brain"
+        title="Who Are We?"
+        description="
           Brain Encrypt is a tech startup founded in January 2025 and
           headquartered in Egypt. We specialize in delivering cutting-edge
           digital solutions for clients across the Gulf and Europe with a focus
-          on mobile and web app development UI/UX and software quality services.
-        </motion.p>
-      </div>
+          on mobile and web app development UI/UX and software quality services."
+      />
 
       <motion.div
         className="grid grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-6"

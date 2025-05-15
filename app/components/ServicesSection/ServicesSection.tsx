@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Cards from "./Cards";
+import HeaderSection from "../HeaderSection";
 
 const ServicesSection = () => {
   return (
@@ -12,17 +13,7 @@ const ServicesSection = () => {
       viewport={{ once: false }}
       transition={{ duration: 0.8 }}
     >
-      <div className="text-center mb-10">
-        <motion.p className="text-xs sm:text-sm font-bold mb-6">
-          Brain Encrypt
-        </motion.p>
-        <motion.h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-4 dark:text-white text-black font-mono uppercase tracking-tighter drop-shadow-xl">
-          Our Services
-          {/* <span className="dark:text-gray-500 text-gray-300 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light italic">
-            Services
-          </span> */}
-        </motion.h1>
-      </div>
+      <HeaderSection companey=" Brain Encrypt" title="Our Services" />
       <motion.div>
         <Cards />
       </motion.div>

@@ -6,6 +6,7 @@ import ParallaxSection from "./components/ParallaxSection/ParallaxSection";
 import ServicesSection from "./components/ServicesSection/ServicesSection";
 import SectionVideo from "./components/SectionVideo/SectionVideo";
 import OurProjects from "./components/Projects/OurProjects";
+import OurPartners from "./components/Partners/OurPartners";
 
 export default function Home() {
   return (
@@ -25,6 +26,9 @@ export default function Home() {
       </section>
       <section className=" h-dvh snap-start">
         <OurProjects />
+      </section>
+      <section className=" h-dvh snap-start">
+        <OurPartners />
       </section>
       <section className=" h-dvh snap-start">
         <ParallaxSection />
